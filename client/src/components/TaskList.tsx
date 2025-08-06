@@ -26,7 +26,7 @@ const TaskList: React.FC<TaskListProps> = ({ tasks }) => {
           <h3 className="text-xl font-bold">{task.title}</h3>
           <p className="text-gray-600 mb-2">{task.description}</p>
           <p className="text-sm text-gray-500">
-            Posted by: {task.createdBy.name}
+            Posted by: {task.createdBy?.name}
           </p>
           <Link
             to={`/tasks/${task._id}`}

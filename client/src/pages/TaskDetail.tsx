@@ -43,7 +43,7 @@ const TaskDetail: React.FC = () => {
         <h2 className="text-2xl font-bold mb-2">{task.title}</h2>
         <p className="text-gray-600 mb-4">{task.description}</p>
         <p className="text-sm text-gray-500 mb-6">
-          Posted by: {task.createdBy.name}
+          Posted by: {task.createdBy?.name}
         </p>
 
         {isApplied ? (
